@@ -22,7 +22,7 @@ public class CambioController {
 		super();
 		this.cambioRepository = cambioRepository;
 	}
-	//testando
+	
 	@Value("${server.port}")
 	private int porta;
 	
