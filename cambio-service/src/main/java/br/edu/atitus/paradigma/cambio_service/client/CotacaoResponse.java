@@ -5,6 +5,7 @@ import java.util.List;
 public class CotacaoResponse {
 	
 	private List<Cotacao> value;
+	
     public List<Cotacao> getValue() {
         return value;
     }
@@ -12,7 +13,9 @@ public class CotacaoResponse {
         this.value = value;
     }
     public static class Cotacao {
+    	
         private double cotacaoVenda;
+        
         public double getCotacaoVenda() {
             return cotacaoVenda;
         }
