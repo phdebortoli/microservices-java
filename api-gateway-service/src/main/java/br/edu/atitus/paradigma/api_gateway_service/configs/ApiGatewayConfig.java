@@ -19,12 +19,18 @@ public class ApiGatewayConfig {
 						.uri("http://httpbin.org"))
 				.route(rota -> rota
 						.path("/cambio-service/**")
+						.filters(f -> f
+								.addRequestHeader("Usuario: ", "Pedro Henrique De Bortoli"))
 						.uri("lb://cambio-service"))
 				.route(rota -> rota
 						.path("/produto-service/**")
+						.filters(f -> f
+								.addRequestHeader("Usuario: ", "Pedro Henrique De Bortoli"))
 						.uri("lb://produto-service"))
 				.route(rota -> rota
 						.path("/saudacao-service/**")
+						.filters(f -> f
+								.addRequestHeader("Usuario: ", "Pedro Henrique De Bortoli"))
 						.uri("lb://saudacao-service"))
 				.build();
 	}
