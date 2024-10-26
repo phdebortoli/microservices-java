@@ -82,6 +82,10 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
+		    <groupId>com.github.ben-manes.caffeine</groupId>
+		    <artifactId>caffeine</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
 		</dependency>
@@ -90,10 +94,7 @@
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine -->
-		<dependency>
-		    <groupId>com.github.ben-manes.caffeine</groupId>
-		    <artifactId>caffeine</artifactId>
-		    </dependency>
+		
 	</dependencies>
  
 	<build>
